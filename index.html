@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitNFoot - Find Your Footwear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-2" href="#" id="logo">
+                <span class="text-danger">F</span><span class="text-primary">i</span><span class="text-success">t</span><span class="text-warning">N</span><span class="text-info">F</span><span class="text-secondary">o</span><span class="text-dark">o</span><span class="text-purple">t</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-menu-item active" href="#" data-page="home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-menu-item" href="#" data-page="about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-menu-item" href="#" data-page="products">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-menu-item" href="#" data-page="shop">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-menu-item" href="#" data-page="blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-menu-item" href="#" data-page="contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page 1: Home -->
+    <div id="home" class="page">
+        <div class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <h1 class="display-3 fw-bold mb-4">NEW SUMMER SHOES COLLECTION</h1>
+                        <p class="lead mb-4">Competently expedite alternative benefits whereas leading-edge catalysts for change. Globally leverage existing an expanded array of leadership</p>
+                        <button class="btn btn-primary btn-lg shop-now-btn">
+                            Shop Now <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="shoe-showcase position-relative">
+                            <div class="shoe-item">
+                                <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Men's Shoes" class="img-fluid rounded-3 shadow-lg">
+                                <div class="shoe-actions">
+                                    <button class="btn btn-sm btn-outline-primary"><i class="fas fa-shopping-cart"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <div class="shoe-item mt-4">
+                                <img src="https://images.pexels.com/photos/2048548/pexels-photo-2048548.jpeg" alt="Women's Shoes" class="img-fluid rounded-3 shadow-lg">
+                                <div class="shoe-actions">
+                                    <button class="btn btn-sm btn-outline-primary"><i class="fas fa-shopping-cart"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: About -->
+    <div id="about" class="page d-none">
+        <div class="container py-5 mt-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-4 fw-bold text-black mb-4">Our Story</h2>
+                    <p class="lead text-black">Experience premium quality footwear from global brands, crafted with passion and designed for comfort.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="collection-card men-collection">
+                        <div class="card h-100 border-0 shadow-lg">
+                            <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" class="card-img-top" alt="Men's Collection">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Men's Collection</h5>
+                                <p class="card-text">Discover our premium men's footwear collection</p>
+                                <button class="btn btn-dark">Explore All <i class="fas fa-arrow-right ms-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="collection-card women-collection">
+                        <div class="card h-100 border-0 shadow-lg">
+                            <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" class="card-img-top" alt="Women's Collection">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Women's Collection</h5>
+                                <p class="card-text">Elegant and stylish women's shoes</p>
+                                <button class="btn btn-dark">Explore All <i class="fas fa-arrow-right ms-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="collection-card sports-collection">
+                        <div class="card h-100 border-0 shadow-lg">
+                            <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg" class="card-img-top" alt="Sports Collection">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Sports Collection</h5>
+                                <p class="card-text">High-performance athletic footwear</p>
+                                <button class="btn btn-dark">Explore All <i class="fas fa-arrow-right ms-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h3 class="fw-bold text-black mb-4">Premium Quality, Global Brands</h3>
+                        <p class="text-black lead">We partner with the world's leading footwear brands to bring you the finest quality shoes. From athletic performance to everyday comfort, our curated collection ensures you find the perfect fit for every occasion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Products -->
+    <div id="products" class="page d-none">
+        <div class="container py-5 mt-5">
+            <h2 class="display-4 fw-bold text-center mb-5">Bestsellers Products</h2>
+            
+            <!-- Brand Filter -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center brand-filter">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" data-brand="all">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-brand="nike">Nike</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-brand="adidas">Adidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-brand="puma">Puma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-brand="bata">Bata</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-brand="apex">Apex</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4" id="products-grid">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="nike">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">New</span>
+                            <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" class="card-img-top product-image" alt="Running Sneaker">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men/Women</small>
+                            <h6 class="card-title">Running Sneaker Shoes</h6>
+                            <p class="price fw-bold text-primary">$180.85</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="bata">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg" class="card-img-top product-image" alt="Leather Slipper">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men/Sports</small>
+                            <h6 class="card-title">Leather Men's Slipper</h6>
+                            <p class="price fw-bold text-primary">$190.85</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="adidas">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg" class="card-img-top product-image" alt="Fabric Shoe">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men/Women</small>
+                            <h6 class="card-title">Simple Fabric Shoe</h6>
+                            <p class="price fw-bold text-primary">$160.85</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="nike">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" class="card-img-top product-image" alt="Air Jordan">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men's/Sports</small>
+                            <h6 class="card-title">Air Jordan 7 Retro</h6>
+                            <p class="price fw-bold text-primary">$170.85 <span class="text-muted text-decoration-line-through">$200.21</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="nike">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/2048548/pexels-photo-2048548.jpeg" class="card-img-top product-image" alt="Nike Air Max">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men/Women</small>
+                            <h6 class="card-title">Nike Air Max 270 SE</h6>
+                            <p class="price fw-bold text-primary">$120.85</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="adidas">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg" class="card-img-top product-image" alt="Adidas Sneakers">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men/Sports</small>
+                            <h6 class="card-title">Adidas Sneakers Shoes</h6>
+                            <p class="price fw-bold text-primary">$100.85 <span class="text-muted text-decoration-line-through">$130.21</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="nike">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1598509/pexels-photo-1598509.jpeg" class="card-img-top product-image" alt="Nike Basketball">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Women/Sports</small>
+                            <h6 class="card-title">Nike Basketball Shoes</h6>
+                            <p class="price fw-bold text-primary">$120.85</p>
+                        </div>
+                    </div>
+                </div>                                                           
+                <!-- Additional Adidas Products -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="adidas">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg" class="card-img-top product-image" alt="Adidas White">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men</small>
+                            <h6 class="card-title">Men Break Net 2.0</h6>
+                            <p class="price fw-bold text-primary">$150.85</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Bata Products -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="bata">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg" class="card-img-top product-image" alt="Bata Brown Black">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men</small>
+                            <h6 class="card-title">Brown Black Casual</h6>
+                            <p class="price fw-bold text-primary">$185.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 product-item" data-brand="bata">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg" class="card-img-top product-image" alt="Bata Casual">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men</small>
+                            <h6 class="card-title">Slip-On Casual Shoes</h6>
+                            <p class="price fw-bold text-primary">$160.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 product-item" data-brand="bata">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1456738/pexels-photo-1456738.jpeg" class="card-img-top product-image" alt="Bata Formal">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men</small>
+                            <h6 class="card-title">Men Slip-Ons Formal</h6>
+                            <p class="price fw-bold text-primary">$120.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Apex Products -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="apex">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg" class="card-img-top product-image" alt="Apex Perforation">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men</small>
+                            <h6 class="card-title">Men Apex Perforation</h6>
+                            <p class="price fw-bold text-primary">$100.85</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 product-item" data-brand="apex">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" class="card-img-top product-image" alt="Apex Pink">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Women</small>
+                            <h6 class="card-title">Apex Women's Style</h6>
+                            <p class="price fw-bold text-primary">$300.45</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Puma Products -->
+                <div class="col-lg-3 col-md-6 product-item" data-brand="puma">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg" class="card-img-top product-image" alt="Puma Sports">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men/Sports</small>
+                            <h6 class="card-title">Puma Running Shoes</h6>
+                            <p class="price fw-bold text-primary">$140.85</p>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Shop -->
+    <div id="shop" class="page d-none">
+        <div class="container py-5 mt-5">
+            <!-- Adidas Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="adidas-sale-section position-relative rounded-3 overflow-hidden">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="p-5">
+                                    <h2 class="display-3 fw-bold text-white mb-3">Adidas Shoes</h2>
+                                    <h3 class="text-warning mb-4">The Summer Sale Off 50%</h3>
+                                    <button class="btn btn-light btn-lg">
+                                        Shop Now <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg" alt="Adidas Shoes" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nike Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="nike-section position-relative rounded-3 overflow-hidden">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="https://images.pexels.com/photos/2529146/pexels-photo-2529146.jpeg" alt="Nike Shoes" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-5">
+                                    <h2 class="display-3 fw-bold text-dark mb-3">Nike Shoes</h2>
+                                    <h4 class="text-primary mb-4">Makes Yourself Keep Sporty</h4>
+                                    <button class="btn btn-primary btn-lg">
+                                        Shop Now <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 50% Off Collection -->
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="fw-bold mb-4">50% Off Collection</h3>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">50% OFF</span>
+                            <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" class="card-img-top" alt="Sale Item 1">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men/Sports</small>
+                            <h6 class="card-title">Nike Training Shoes</h6>
+                            <p class="price fw-bold text-primary">$75.00 <span class="text-muted text-decoration-line-through">$150.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">50% OFF</span>
+                            <img src="https://images.pexels.com/photos/2048548/pexels-photo-2048548.jpeg" class="card-img-top" alt="Sale Item 2">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Women/Casual</small>
+                            <h6 class="card-title">Adidas Lifestyle</h6>
+                            <p class="price fw-bold text-primary">$90.00 <span class="text-muted text-decoration-line-through">$180.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">50% OFF</span>
+                            <img src="https://images.pexels.com/photos/1240894/pexels-photo-1240894.jpeg" class="card-img-top" alt="Sale Item 3">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Men/Basketball</small>
+                            <h6 class="card-title">Puma Court Rider</h6>
+                            <p class="price fw-bold text-primary">$60.00 <span class="text-muted text-decoration-line-through">$120.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">50% OFF</span>
+                            <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" class="card-img-top" alt="Sale Item 4">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-info" title="Quick View"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm btn-outline-warning" title="Compare"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted">Women/Running</small>
+                            <h6 class="card-title">Bata Sport Runner</h6>
+                            <p class="price fw-bold text-primary">$65.00 <span class="text-muted text-decoration-line-through">$130.00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Blog -->
+    <div id="blog" class="page d-none">
+        <div class="bg-dark py-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-3 fw-bold text-white">New Trend Edition</h2>
+                        <p class="text-light lead">Discover the latest in footwear innovation</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card bg-transparent border-light">
+                            <img src="https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg" class="card-img-top rounded" alt="Trend 1">
+                            <div class="card-body text-center">
+                                <h6 class="card-title text-white">Future Sport</h6>
+                                <p class="card-text text-light">Next-gen athletic performance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card bg-transparent border-light">
+                            <img src="https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg" class="card-img-top rounded" alt="Trend 2">
+                            <div class="card-body text-center">
+                                <h6 class="card-title text-white">Urban Style</h6>
+                                <p class="card-text text-light">Street fashion meets comfort</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card bg-transparent border-light">
+                            <img src="https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg" class="card-img-top rounded" alt="Trend 3">
+                            <div class="card-body text-center">
+                                <h6 class="card-title text-white">Eco Friendly</h6>
+                                <p class="card-text text-light">Sustainable footwear solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-outline-light btn-lg">
+                            Explore All <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-item p-4">
+                        <i class="fas fa-shipping-fast fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold">FREE SHIPPING</h5>
+                        <p class="text-muted">All orders over $150</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-item p-4">
+                        <i class="fas fa-undo fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold">FREE RETURN</h5>
+                        <p class="text-muted">Money back in 15 days</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-item p-4">
+                        <i class="fas fa-credit-card fa-3x text-warning mb-3"></i>
+                        <h5 class="fw-bold">QUICK PAYMENT</h5>
+                        <p class="text-muted">100% secure payment</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-item p-4">
+                        <i class="fas fa-headset fa-3x text-info mb-3"></i>
+                        <h5 class="fw-bold">24/7 SUPPORT</h5>
+                        <p class="text-muted">Get Quick Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <img src="https://images.pexels.com/photos/1456738/pexels-photo-1456738.jpeg" class="img-fluid rounded-3 shadow" alt="Trendy Girl">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg" class="img-fluid rounded-3 shadow" alt="Red Sneakers">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg" class="img-fluid rounded-3 shadow" alt="Multicolor Shoe">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="https://images.pexels.com/photos/1598509/pexels-photo-1598509.jpeg" class="img-fluid rounded-3 shadow" alt="White Puma">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 6: Contact -->
+    <div id="contact" class="page d-none">
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <!-- FitNFoot Brand -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="fw-bold mb-4">
+                        <span class="text-danger">F</span><span class="text-primary">i</span><span class="text-success">t</span><span class="text-warning">N</span><span class="text-info">F</span><span class="text-secondary">o</span><span class="text-dark">o</span><span class="text-purple">t</span>
+                    </h4>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-2x text-info"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-pinterest fa-2x text-danger"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-2x text-primary"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4">CONTACT US</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Fashion Street, NY 10001</p>
+                        <p><i class="fas fa-envelope me-2"></i> FitNFoot@help.com</p>
+                    </div>
+                </div>
+
+                <!-- My Account -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4">MY ACCOUNT</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">My Account</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">View Cart</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Wishlist</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Compare</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">New Products</a></li>
+                    </ul>
+                </div>
+
+                <!-- Opening Time -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4">OPENING TIME</h5>
+                    <div class="opening-hours">
+                        <p class="mb-1">Mon-Tue: 8AM - 10PM</p>
+                        <p class="mb-1">Wed: 8AM - 7PM</p>
+                        <p class="mb-1">Fri: 7AM - 12PM</p>
+                        <p class="mb-1">Sat: 9AM - 8PM</p>
+                        <p class="mb-1">Sun: Closed</p>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4">NEWSLETTER</h5>
+                    <p class="small mb-3">Authoritatively morph 24/7 potentialities with error-free partnerships</p>
+                    <div class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
